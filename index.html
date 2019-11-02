@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>TP Framework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+	<div class="container">
+		<div class="row header">
+			<div id="logo" class="col-md-9">
+				<img src="img/logo_msp_Part.png" class="img-fluid rounded float-left marginleft" width="291" height="64">
+			</div>
+
+			<div role="search" id="recherche_conteneur" class="col-md-3 barrerech">
+				<form action="https://mon.service-public.fr/portail/faces/jsp/liste_res_tout.jsp" method="get">
+					<input type="text" class="span-5" name="fullText" id="rechercheInput"value="Rechercher" title="Rechercher">
+					<input type="submit" value="ok" title="Lancer la recherche"   id="ok_recherche">
+				</form>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light barrenav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="col-md-3 nav-item dropdown borderradius">
+						<a href="#" class="nav-link dropdown-toggle" href="#" id="profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Mon Tableau de bord
+						</a>
+						<div class="dropdown-menu sousmenu" aria-labelledby="profil">
+							<a class="dropdown-item" href="#">> Mes liaisons de comptes </a>
+							<a class="dropdown-item" href="#"> > Mon calendrier</a>
+							<a class="dropdown-item" href="#"> > Mon suivi</a>
+						</div>
+					</li>
+					<li class="col-md-3 nav-item dropdown borderradius">
+						<a href="#" class="nav-link dropdown-toggle" href="#" id="profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Mes documents
+						</a>
+						<div class="dropdown-menu sousmenu" aria-labelledby="profil">
+							<a class="dropdown-item" href="#">> Mon porte-documents</a>
+							<a class="dropdown-item" href="#"> > Mon bloc-notes</a>
+						</div>
+					</li>
+					<li class="col-md-3 nav-item dropdown borderradius">
+						<a class="nav-link dropdown-toggle" href="#" id="profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Mon profil
+						</a>
+						<div class="dropdown-menu sousmenu" aria-labelledby="profil">
+							<a class="dropdown-item" href="#">> Mes coordonnées </a>
+							<a class="dropdown-item" href="#"> > Mes contacts</a>
+							<a class="dropdown-item" href="#"> > Mes options</a>
+						</div>
+					</li>
+					<li class="col-md-3 nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" href="#" id="profil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Catalogue des services
+						</a>
+						<div class="dropdown-menu sousmenu" aria-labelledby="profil">
+							<a class="dropdown-item" href="#">> Les démarches </a>
+							<a class="dropdown-item" href="#"> > Les formulaires CERFA</a>
+							<a class="dropdown-item" href="#"> > Les organismes partenaires</a>
+							<a class="dropdown-item" href="#"> > L'annuaire de l'administration</a>
+							<a class="dropdown-item" href="#"> >  Le guide des droits et démarches</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="fil" class="sentence row">
+			<ul class="text-left">
+				<li class=""><a class="accueilbleu" href="https://mon.service-public.fr/portail/">Accueil</a></li>
+				<li class="">&nbsp;&gt;&nbsp;Mon tableau de bord</li>
+			</ul>
+		</div>
+
+		<section class="row">
+			<div id="contenu_principal" class="col-md-9">
+				<h1 class="fond-bleu">Mon tableau de bord</h1>
+				<div class="police-bleue">Découvrez ci-dessous ce que vous pouvez faire dans la rubrique « Mon tableau de bord ».</div>
+				<div class="row backgroudfondaside">
+					<div class="col asidegauche">
+						<a class="minititre" href="jsp/mes_liaisons.jsp"><img src="img/402_429_Liaisons.JPG" class="img-fluid imgicone" width="60" height="60">Mes liaisons de comptes</a>
+						<ul class="listul">
+							<li class="listli">Accédez d'un clic à vos comptes administratifs sans ressaisir vos identifiants et mots de passe.</li>
+							<li class="listli">Gérez vos liaisons de comptes.</li>
+						</ul>
+					</div>
+					<div class="col asidegauche">
+						<a class="minititre" href="jsp/mon_calendrier.jsp"><img src="img/605_403_418_picto_agenda.gif" class="img-fluid imgicone" width="60" height="60">Mon calendrier </a>
+						<ul class="listul">
+							<li class="listli">Notez et visualisez toutes vos échéances administratives.</li>
+							<li class="listli">Recevez des alertes par courriel pour vos rappels  d'échéances.</li>
+						</ul>
+					</div>
+					<div class="col asidegauche">
+						<a class="minititre" href="jsp/mon_suivi.jsp"><img src="img/401_430_suivi.jpg" class="img-fluid imgicone" width="60" height="60">Mon suivi </a>
+						<ul class="listul">
+							<li class="listli">Suivez l'avancement de vos démarches en ligne.</li>
+							<li class="listli">Consultez les messages envoyés.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<aside id="col-droite" class="col-md-3">
+				<div class="aside1droite">
+					<h3 class="fond-bleu">LES ASTUCES</h3>
+					<ul class="listuldroite">
+						<li class="listli"><a href="jsp/authent/page_detail_astuce_MSP.jsp?idAstuce=1001" target="_self" title="Lien vers Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne">Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne</a></li>
+					</ul>
+					<div class="astuces"><a class="police-lien" href="jsp/authent/toutes_astuces_msp.jsp">Toutes les astuces</a></div>
+				</div>
+				<div class="aside2droite">
+					<h3 class="fond-rouge">Les actualités</h3>
+					<ul class="listuldroite">
+						<li class="listli"><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11644" title="Lien vers Votre avis nous intéresse…"><span class="date">22/10/2012</span> Que pensez-vous de MSP ?</a></li>
+						<li class="listli"><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11823" title="Lien vers Une nouvelle démarche dans le Tarn"><span class="date">10/10/2012</span> Le Conseil général du Tarn vient de déployer, une nouvelle téléprocédure .</a></li>
+						<li class="listli"><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11643" title="Lien vers Déclarez en ligne le décès d'un proche "><span class="date">30/07/2012</span> Une nouvelle démarche en ligne sur MSP</a></li>
+						<li class="listli"><a href="jsp/authent/page_detail_actualite_MSP.jsp?idActu=11631" title="Lien vers Pour les départements numérotés de 50 à 974 il ne vous reste que quelques jours pour télé-déclarer vos revenus"><span class="date">15/06/2012</span> Accédez à votre déclaration de revenus depuis MSP</a></li>
+					</ul>
+					<div class="astuces"><a class="police-rougelien" href="jsp/authent/tout_actualites_msp.jsp">Toutes les actualités</a></div>
+				</div>
+			</aside>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<ul class="row">
+					<li id="images_pied" class="col-md-1">
+						<span id="ojd"><a href="http://www.ojd-internet.com/chiffres-internet/7111-service-public.fr" target="_blank"><img src="img/logo-ojd.png" alt="logo du OJD" class="img-responsive"></a></span>
+					</li>
+					<li class="col-md-2">
+						<p>Assistance et contact</p>
+						<ul>
+							<li class="point"><a href="jsp/authent/plan_du_site.jsp" target="_self" ><span title="">Plan du site</span></a></li>
+							<li class="point"><a href="jsp/authent/contact.jsp" target="_self"><span title="">Contact</span></a></li>
+							<li class="point"><a href="jsp/authent/aide.jsp" target="_self"><span title="">Aide</span></a></li>
+							<li class="point"><a href="jsp/authent/faqs.jsp" target="_self" ><span title="">Questions fréquentes</span></a></li>
+						</ul>
+					</li>
+					<li class="col-md-2">
+						<p>Informations légales</p>
+						<ul>
+							<li class="point"><a href="jsp/authent/mentions_legales.jsp"><span title="">Mentions légales</span></a></li>
+							<li class="point"><a href="jsp/authent/conditions_generales_utilisation.jsp" target="_self"><span title="">Conditions générales d'utilisation</span></a></li>
+							<li class="point"><a href="http://www.service-public.fr/%C3%A0-propos-du-site/001371.html" target="_blank"><span title="Répertoire des informations publiques - Nouvelle fenêtre">Répertoire des informations publiques</span></a></li>
+						</ul>
+					</li>
+					<li class="col-md-2">
+						<p>Qualité de service</p>
+						<ul>
+							<li class="point"><a href="jsp/authent/accessibilite.jsp"><span title="">Accessibilité</span></a></li>
+							<li class="point"><a href="jsp/authent/securite.jsp" ><span title="">Sécurité</span></a></li>
+							<li class="point"><a href="jsp/authent/engagement_qualite.jsp"><span title="">Engagement qualité</span></a></li>
+							<li class="point"><a href="jsp/authent/statistiques.jsp" ><span title="">Statistiques</span></a></li>
+						</ul>
+					</li>
+					<li class="col-md-2">
+						<p>Partenariat</p>
+						<ul>
+							<li class="point"><a href="jsp/authent/partenaires.jsp"><span title="">Nos organismes partenaires</span></a></li>
+							<li class="point"><a href="jsp/authent/devenir_partenaire.jsp"><span title="">Devenir partenaire ?</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="fin_du_pied" class="fond-bleue">
+				<a target="_blank" href="jsp/authent/a_propos_de_la_DGME.jsp">Tous droits réservés - Direction Générale de Modernisation de l'Etat - 2012 </a> | <a title="A propos du site" href="jsp/authent/a_propos_du_site.jsp">A propos de mon.service-public.fr</a>
+			</div>
+		</footer>
+
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
